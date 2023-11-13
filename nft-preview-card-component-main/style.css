@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.bigbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+a img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 30px 20px 20px hsl(215, 49%, 8%);
+  width: 20rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.image img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.content-Icon {
+  background: rgba(0, 255, 255, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.content-Icon:hover {
+  opacity: 1;
+}
+
+.content-Icon img {
+  width: 40px;
+}
+
+.container__headline {
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container__paragraph {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.price-counter,
+.price,
+.counter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.price-counter {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.price {
+  height: 20px;
+  align-items: center;
+  gap: 6px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+
+.counter {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  height: 20px;
+  font-size: 13px;
+  align-items: center;
+  gap: 4px;
+  padding-right: 5px;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  word-spacing: 2px;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  font-size: 13px;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator > img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+span {
+  color: white;
+}
+
+.hej span:hover {
+  color: aqua;
+}
+
+.container h1:hover,
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.attribution a {
+  color: hsl(0, 95%, 44%);
+}
